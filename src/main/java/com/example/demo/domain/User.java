@@ -33,8 +33,7 @@ public class User {
     }
 
     //생성자
-    public User(long id, String name, long age) {
-        this.id = id;
+    public User(String name, long age) {
         this.name = name;
         this.age = age;
     }
