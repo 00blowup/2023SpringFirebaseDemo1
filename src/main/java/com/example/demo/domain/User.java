@@ -1,11 +1,21 @@
 package com.example.demo.domain;
 
 public class User {
+
     //필드
+    private long id;
     private String name;
     private long age;
 
     //Getters & Setters
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -23,7 +33,8 @@ public class User {
     }
 
     //생성자
-    public User(String name, long age) {
+    public User(long id, String name, long age) {
+        this.id = id;
         this.name = name;
         this.age = age;
     }
